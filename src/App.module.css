@@ -1,0 +1,125 @@
+.container {
+  padding: 4.5rem 22rem;
+  margin: 0;
+}
+
+.container > header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 3.313rem;
+}
+
+.container > form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+@media (max-width: 990px) {
+  .container {
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 1rem;
+  }
+  .container > form {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+
+.container form input {
+  width: 100%;
+  line-height: 1.4;
+  border: 0;
+  border-radius: 8px;
+  padding: 1rem;
+  color: var(--gray-300);
+
+  background: var(--gray-500);
+}
+
+.container form input::placeholder {
+  color: var(--gray-100);
+}
+
+.container form button {
+  background: var(--blue-dark);
+  color: var(--gray-100);
+  border-radius: 8px;
+  padding: 1rem;
+  line-height: 1.4;
+  align-items: center;
+  display: flex;
+  gap: 0.5rem;
+  cursor: pointer;
+  border: 0;
+
+  font-size: 0.875rem;
+}
+
+.todoList {
+  margin-top: 4rem;
+}
+
+.todoList header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.todoList header strong {
+  color: var(--blue);
+}
+
+.todoList header strong:last-child {
+  color: var(--purple);
+}
+
+.todoList header strong span {
+  padding: 0.125rem 0.5rem;
+  background: var(--gray-400);
+  color: var(--gray-200);
+  font-weight: 700;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  margin-right: 0.5rem;
+}
+
+.listBox {
+  margin-top: 1.5rem;
+  border-top: 1px solid var(--gray-400);
+  border-radius: 0.5rem;
+  align-items: center;
+
+  padding: 4rem 1.5rem;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.listBox strong {
+  margin-top: 1rem;
+  font-weight: 700;
+  line-height: 22px;
+  color: var(--gray-300);
+}
+
+.listBox span {
+  margin: 0 auto;
+  color: var(--gray-300);
+}
+
+.listTodos {
+  margin-top: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 87.5%;
+  }
+}
